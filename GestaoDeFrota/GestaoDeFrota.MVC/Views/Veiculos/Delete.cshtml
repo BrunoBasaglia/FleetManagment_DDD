@@ -1,0 +1,198 @@
+﻿@model GestaoDeFrota.MVC.ViewModels.VeiculoViewModel
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Detalhes do Veículo</h1>
+<div>
+    <h4>Deseja realmente excluir o Veículo?</h4>
+    <hr />
+</div>
+<form asp-action="Delete" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-2 pr-md-1">
+                            <div class="form-group">
+                                <label>Id</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Id)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label>Placa</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Placa)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-md-1">
+                            <div class="form-group">
+                                <label>Fabricante</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Modelo.Fabricante.Nome)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-md-1">
+                            <div class="form-group">
+                                <label>Modelo</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Modelo.Nome)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pl-md-1">
+                            <div class="form-group">
+                                <label>KM</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Quilometragem)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-3 pr-md-1">
+                            <div class="form-group">
+                                <label>Combustível</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Combustivel.Nome)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-md-1">
+                            <div class="form-group">
+                                <label>Motor</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Motor.Motorizacao)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label>Potência</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Potencia)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label>Tanque</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Tanque) (litros)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pl-md-1">
+                            <div class="form-group">
+                                <label>Portas</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Portas)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card card-user">
+                <div class="row">
+                    <div class="img-fluid">
+
+                        @if (Model.Imagem != null)
+                        {
+                            <img class="img-wrapper" src="~/files/@Model.Id/@Model.Imagem.Arquivo" alt="..." height="175" width="250" />
+                        }
+                        else
+                        {
+                            <img class="img-wrapper" src="~/img/cam.png" alt="..." height="175" width="250" />
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-2 pr-md-1">
+                            <div class="form-group">
+                                <label>Câmbio</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Cambio.Tipo)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label>Categoria</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Categoria.Tipo)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label>Classe</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Classe.Classificacao)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label>Origem</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Origem.Procedencia)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label>Chassi</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Chassi)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pl-md-1">
+                            <div class="form-group">
+                                <label>Valor</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Valor)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label>Observação</label>
+                                <div>
+                                    @Html.DisplayFor(model => model.Observacao)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <input type="submit" value="Delete" class="btn btn-sm btn-default" />
+            <a asp-action="Index" class="btn btn-sm btn-primary">Voltar</a>
+        </div>
+    </div>
+</form>
+
+
+

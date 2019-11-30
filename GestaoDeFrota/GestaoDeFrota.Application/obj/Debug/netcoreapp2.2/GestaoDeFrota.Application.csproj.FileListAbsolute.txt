@@ -1,0 +1,14 @@
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\bin\Debug\netcoreapp2.2\GestaoDeFrota.Application.deps.json
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\bin\Debug\netcoreapp2.2\GestaoDeFrota.Application.dll
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\bin\Debug\netcoreapp2.2\GestaoDeFrota.Application.pdb
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\bin\Debug\netcoreapp2.2\GestaoDeFrota.Domain.dll
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\bin\Debug\netcoreapp2.2\GestaoDeFrota.Domain.pdb
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\obj\Debug\netcoreapp2.2\GestaoDeFrota.Application.csprojAssemblyReference.cache
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\obj\Debug\netcoreapp2.2\GestaoDeFrota.Application.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\obj\Debug\netcoreapp2.2\GestaoDeFrota.Application.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\obj\Debug\netcoreapp2.2\GestaoDeFrota.Application.AssemblyInfo.cs
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\obj\Debug\netcoreapp2.2\GestaoDeFrota.Application.csproj.CopyComplete
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\obj\Debug\netcoreapp2.2\GestaoDeFrota.Application.dll
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Application\obj\Debug\netcoreapp2.2\GestaoDeFrota.Application.pdb

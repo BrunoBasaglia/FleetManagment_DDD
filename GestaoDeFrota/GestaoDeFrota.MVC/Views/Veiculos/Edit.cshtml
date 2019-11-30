@@ -1,0 +1,165 @@
+﻿@model GestaoDeFrota.MVC.ViewModels.VeiculoViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="title">Editar Veiculo</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="row">
+                        <div class="col-md-2 pr-md-1">
+                            <div class="form-group">
+                                <label asp-for="Placa" class="control-label"></label>
+                                <input asp-for="Placa" class="form-control" placeholder="Placa" name="Placa" />
+                                <span asp-validation-for="Placa" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Quilometragem" class="control-label"></label>
+                                <input asp-for="Quilometragem" class="form-control" placeholder="Quilometragem" name="Quilometragem" />
+                                <span asp-validation-for="Quilometragem" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Fabricante" class="control-label"></label>
+                                <select asp-for="Modelo.FabricanteId" asp-items="ViewBag.Fabricante" class="form-control" name="Fabricante">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pl-md-1">
+                            <div class="form-group">
+                                <label asp-for="Modelo" class="control-label"></label>
+                                <select asp-for="ModeloId" asp-items="ViewBag.Modelo" class="form-control" name="ModeloId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 pr-md-1">
+                            <div class="form-group">
+                                <label asp-for="Combustivel" class="control-label"></label>
+                                <select asp-for="CombustivelId" asp-items="ViewBag.Combustivel" class="form-control" name="CombustivelId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Motor" class="control-label"></label>
+                                <select asp-for="MotorId" asp-items="ViewBag.Motor" class="form-control" name="MotorId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Potencia" class="control-label"></label>
+                                <input asp-for="Potencia" class="form-control" placeholder="Potência" name="Potencia" />
+                                <span asp-validation-for="Potencia" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Chassi" class="control-label"></label>
+                                <input asp-for="Chassi" class="form-control" placeholder="Chassi" name="Chassi" />
+                                <span asp-validation-for="Chassi" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pl-md-1">
+                            <div class="form-group">
+                                <label asp-for="Tanque" class="control-label"></label>
+                                <input asp-for="Tanque" class="form-control" placeholder="Litros" name="Tanque" />
+                                <span asp-validation-for="Tanque" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 pr-md-1">
+                            <div class="form-group">
+                                <label asp-for="Cambio" class="control-label"></label>
+                                <select asp-for="CambioId" asp-items="ViewBag.Cambio" class="form-control" name="CambioId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Categoria" class="control-label"></label>
+                                <select asp-for="CategoriaId" asp-items="ViewBag.Categoria" class="form-control" name="CategoriaId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Classe" class="control-label"></label>
+                                <select asp-for="ClasseId" asp-items="ViewBag.Classe" class="form-control" name="ClasseId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 pl-md-1">
+                            <div class="form-group">
+                                <label asp-for="Origem" class="control-label"></label>
+                                <select asp-for="OrigemId" asp-items="ViewBag.Origem" class="form-control" name="OrigemId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 pr-md-1">
+                            <div class="form-group">
+                                <label asp-for="Valor" class="control-label"></label>
+                                <input asp-for="Valor" class="form-control" placeholder="Valor" name="Valor" />
+                                <span asp-validation-for="Valor" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Portas" class="control-label"></label>
+                                <input asp-for="Portas" class="form-control" placeholder="Portas" name="Portas" />
+                                <span asp-validation-for="Portas" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Lugares" class="control-label"></label>
+                                <input asp-for="Lugares" class="form-control" placeholder="Lugares" name="Lugares" />
+                                <span asp-validation-for="Lugares" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pl-md-1">
+                            <label asp-for="Imagem" class="control-label"></label>
+                            <input asp-for="Imagem.Arquivo" type="file" class="form-control" name="Img" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Observação</label>
+                                <textarea asp-for="Observacao" rows="4" cols="80" class="form-control" placeholder="Escreva aqui sua observação sobre o veículo"  name="observacao"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-fill btn-primary"><i class="fas fa-arrow"></i>Salvar</button>
+                        <a asp-action="Index" class="btn btn-fill btn-outline-primary">Voltar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

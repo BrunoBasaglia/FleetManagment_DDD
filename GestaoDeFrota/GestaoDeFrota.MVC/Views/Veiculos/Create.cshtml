@@ -1,0 +1,186 @@
+﻿@model GestaoDeFrota.MVC.ViewModels.VeiculoViewModel
+
+@{
+    ViewData["Title"] = "Cadastro de Veículo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    option {
+        color: #000000 !important;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="title">Novo Veiculo</h5>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="row">
+                        <div class="col-md-2 pr-md-1">
+                            <div class="form-group">
+                                <label asp-for="Placa" class="control-label"></label>
+                                <input asp-for="Placa" class="form-control" placeholder="Placa" name="Placa" id="Placa" />
+                                <span asp-validation-for="Placa" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Quilometragem" class="control-label"></label>
+                                <input asp-for="Quilometragem" class="form-control" placeholder="Quilometragem" name="Quilometragem"  Id="Quilometragem" />
+                                <span asp-validation-for="Quilometragem" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Fabricante" class="control-label"></label>
+                                <select asp-for="Fabricante" asp-items="ViewBag.Fabricante" class="form-control" name="Fabricante" id="Fabricante">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pl-md-1">
+                            <div class="form-group">
+                                <label asp-for="Modelo" class="control-label"></label>
+                                <select asp-for="Modelo" asp-items="ViewBag.Modelo" class="form-control" name="ModeloId" id="Modelo" disabled="disabled">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 pr-md-1">
+                            <div class="form-group">
+                                <label asp-for="Combustivel" class="control-label"></label>
+                                <select asp-for="Combustivel" asp-items="ViewBag.Combustivel" class="form-control" name="CombustivelId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Motor" class="control-label"></label>
+                                <select asp-for="Motor" asp-items="ViewBag.Motor" class="form-control" name="MotorId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Potencia" class="control-label"></label>
+                                <input asp-for="Potencia" class="form-control" placeholder="Potência" name="Potencia" />
+                                <span asp-validation-for="Potencia" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Chassi" class="control-label"></label>
+                                <input asp-for="Chassi" class="form-control" placeholder="Chassi" name="Chassi" />
+                                <span asp-validation-for="Chassi" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pl-md-1">
+                            <div class="form-group">
+                                <label asp-for="Tanque" class="control-label"></label>
+                                <input asp-for="Tanque" class="form-control" placeholder="Litros" name="Tanque" />
+                                <span asp-validation-for="Tanque" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 pr-md-1">
+                            <div class="form-group">
+                                <label asp-for="Cambio" class="control-label"></label>
+                                <select asp-for="CambioId" asp-items="ViewBag.Cambio" class="form-control" name="CambioId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Categoria" class="control-label"></label>
+                                <select asp-for="Categoria" asp-items="ViewBag.Categoria" class="form-control" name="CategoriaId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Classe" class="control-label"></label>
+                                <select asp-for="Classe" asp-items="ViewBag.Classe" class="form-control" name="ClasseId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 pl-md-1">
+                            <div class="form-group">
+                                <label asp-for="Origem" class="control-label"></label>
+                                <select asp-for="Origem" asp-items="ViewBag.Origem" class="form-control" name="OrigemId">
+                                    <option>Selecione</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 pr-md-1">
+                            <div class="form-group">
+                                <label asp-for="Valor" class="control-label"></label>
+                                <input asp-for="Valor" class="form-control" placeholder="Valor" name="Valor" id="Valor" />
+                                <span asp-validation-for="Valor" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Portas" class="control-label"></label>
+                                <input asp-for="Portas" class="form-control" placeholder="Portas" name="Portas" />
+                                <span asp-validation-for="Portas" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-2 px-md-1">
+                            <div class="form-group">
+                                <label asp-for="Lugares" class="control-label"></label>
+                                <input asp-for="Lugares" class="form-control" placeholder="Lugares" name="Lugares" />
+                                <span asp-validation-for="Lugares" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pl-md-1">
+                            <label asp-for="Imagem" class="control-label"></label>
+                            <input type="file" class="form-control" name="Img" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Observação</label>
+                                <textarea rows="4" cols="80" class="form-control" placeholder="Escreva aqui sua observação sobre o veículo" name="observacao"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-fill btn-primary">Salvar</button>
+                        <a asp-action="Index" class="btn btn-fill btn-outline-primary">Voltar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+
+<script src="~/lib/jquery.inputmask/inputmask/inputmask.dependencyLib.js"></script>
+<script src="~/lib/jquery.inputmask/inputmask/inputmask.js"></script>
+<script src="~/lib/jquery.inputmask/inputmask/jquery.inputmask.js"></script>
+<script src="~/lib/jquery.inputmask/inputmask/inputmask.extensions.js"></script>
+<script src="~/lib/jquery.inputmask/inputmask/inputmask.date.extensions.js"></script>
+<script src="~/lib/jquery.inputmask/inputmask/inputmask.numeric.extensions.js"></script>
+
+
+<script src="~/js/veiculo.js"></script>

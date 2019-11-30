@@ -1,0 +1,12 @@
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\bin\Debug\netcoreapp2.2\GestaoDeFrota.Domain.deps.json
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\bin\Debug\netcoreapp2.2\GestaoDeFrota.Domain.dll
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\bin\Debug\netcoreapp2.2\GestaoDeFrota.Domain.pdb
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\obj\Debug\netcoreapp2.2\GestaoDeFrota.Domain.csprojAssemblyReference.cache
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\obj\Debug\netcoreapp2.2\GestaoDeFrota.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\obj\Debug\netcoreapp2.2\GestaoDeFrota.Domain.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\obj\Debug\netcoreapp2.2\GestaoDeFrota.Domain.AssemblyInfo.cs
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\obj\Debug\netcoreapp2.2\GestaoDeFrota.Domain.csproj.CopyComplete
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\obj\Debug\netcoreapp2.2\GestaoDeFrota.Domain.dll
+C:\Users\Asus\Documents\Workspace\Gestao_de_Frota\GestaoDeFrota\GestaoDeFrota.Domain\obj\Debug\netcoreapp2.2\GestaoDeFrota.Domain.pdb
